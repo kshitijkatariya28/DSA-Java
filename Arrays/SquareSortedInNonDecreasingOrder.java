@@ -22,7 +22,7 @@ public class SquareSortedInNonDecreasingOrder {
         int arr[]={-10,-5,3,7,8,9};
         int ans[] = squareSorted(arr);
         for (int i = 0; i < ans.length; i++) {
-            System.out.print(ans[i]+" ");
+            System.out.print(ans[i]+" 11");
         }
         
     }
