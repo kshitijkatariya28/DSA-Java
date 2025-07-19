@@ -1,5 +1,4 @@
 package Recursion;
-import java.util.*;
 
 public class MyPow {
      static double myPow(double x, int n) {
