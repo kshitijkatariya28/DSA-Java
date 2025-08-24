@@ -13,7 +13,23 @@ public class Implementation {
     public static class linkedlist{
         Node head = null;
         Node tail = null;
-
+      
+        //deleetion
+        void deleteAt(int pos){
+            if(pos==0){
+                head = head.next;
+            }
+            Node temp = head;
+            for (int i = 1; i <= pos-1; i++) {
+                temp = temp.next;
+            }
+            if(pos==size()-1){
+                tail = temp;
+            }
+            temp.next = temp.next.next;
+        }
+         
+        //insertion
         void insertAtMiddle(int data,int pos){
            if(pos<0 || pos>size()){
             System.out.println("invalid position");
@@ -97,6 +113,7 @@ public class Implementation {
          ll.insertAtMiddle(3, 0);
          ll.display();
          System.out.println();
-         System.out.println(ll.getAt(4));
+         ll.deleteAt(3);
+         ll.display();
     }
 }
